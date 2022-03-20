@@ -2,25 +2,198 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Microverse Application Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Microverse Application Form</h1>
+        <p id="description" class="description text-center">
+          Become an international software developer from anywhere around the world.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>How did you hear about Microverse?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="From a former Microverse alumni"
+              type="radio"
+              class="input-radio"
+              checked
+            />From a former Microverse alumni</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="From Google ads"
+              type="radio"
+              class="input-radio"
+            />From Google ads</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="From Instagram"
+              type="radio"
+              class="input-radio"
+            />From Instagram</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="From Facebook"
+              type="radio"
+              class="input-radio"
+            />From Facebook</label
+          >
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What do you hope to achieve from Microverse?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="job">Get a well paying job</option>
+            <option value="software engineer">To become a software engineer</option>
+            <option value="knowledge">To gain more knowledge on web development</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            Which languages are you proficient in?
+            <span class="clue">(Check only the ones you know)</span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="HTML"
+              type="checkbox"
+              class="input-checkbox"
+            />HTML</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="CSS"
+              type="checkbox"
+              class="input-checkbox"
+            />CSS</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="JavaScript"
+              type="checkbox"
+              class="input-checkbox"
+            />JavaScript</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Python"
+              type="checkbox"
+              class="input-checkbox"
+            />Python</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Java"
+              type="checkbox"
+              class="input-checkbox"
+            />Java</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="C#"
+              type="checkbox"
+              class="input-checkbox"
+            />C#</label
+          >
+    
+        <div class="form-group">
+          <p>Describe yourself in two sentences</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer class="footer-section">
+ 
+      <div class="copyright-text">
+          <p>Copyright &copy; 2022, All Right Reserved <a href="https://github.com/killy10o10/survey_form_microverse">Imma_Killy</a></p>
+      </div>
+  
+    </footer>
     <script  src="js/index.js"></script>
   </body>
 </html>
